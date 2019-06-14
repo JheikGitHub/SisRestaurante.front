@@ -1,0 +1,21 @@
+.home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: calc(100vh - 60px);
+    background-color: #f6f6f6;
+}
+
+.home__img {
+    background: url(../../assets/img/buda-restaurant.jpg) no-repeat center;
+    background-size: cover;
+    width: 180px;
+    height: 180px;
+}
+
+.home__titulo {
+    font-weight: 400;
+    font-size: 3rem;
+}

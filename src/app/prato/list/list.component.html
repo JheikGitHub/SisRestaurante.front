@@ -1,0 +1,28 @@
+<h2 class="tituloConteudo">Restaurantes</h2>
+
+<div class="container">
+  <a class="btn btn-primary" [routerLink]="['create']" routerLinkActive="router-link-active">
+    <i class="fas fa-plus"></i> Adicionar Prato</a>
+
+  <span class="messageForm">{{message}}</span>
+
+  <div class="cards">
+
+    <div class="card" *ngFor="let item of list">
+
+      <h4 class="titulo__card">{{item.nome}}</h4>
+
+      <p class="descricao__card"> {{item.preco}},00 R$</p>
+
+      <button class="buttons">
+
+        <button class="btn btn-default" [routerLink]="['update', item.id]"
+          routerLinkActive="router-link-active">Editar</button>
+        <button class="btn btn-default" (click)="delete(item)">Excluir</button>
+
+      </button>
+    </div>
+
+  </div>
+
+</div>

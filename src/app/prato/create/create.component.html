@@ -1,0 +1,22 @@
+<h2 class="tituloConteudo">Registrar</h2>
+
+<div class="container">
+  <form [formGroup]="form" (ngSubmit)="onSubmit()">
+
+    <span class="messageForm">{{message}}</span>
+
+    <div class="formGroup">
+      <label for="nome">Prato:</label>
+      <input type="text" class="form-control" id="nome" formControlName="nome">
+    </div>
+
+    <div class="formGroup">
+      <label for="preco">Endereço:</label>
+      <input type="number" class="form-control" id="preco" formControlName="preco">
+    </div>
+
+    <button type="submit" class="btn btn-primary">
+      <i class="fas fa-save"></i> Salva Prato</button>
+
+  </form>
+</div>

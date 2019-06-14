@@ -1,1 +1,106 @@
 /* You can add global styles to this file, and also import other style files */
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+    width: 96%;
+    margin: 15px auto 0;
+    padding: 15px 10px;
+    background-color: #fff;
+}
+
+body {
+    background-color: #ecf0f5;
+}
+
+.btn {
+    border-radius: 3px;
+    padding: 5px 12px;
+    margin: 5px;
+    cursor: pointer;
+    transition: all .1s linear;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #635ba6;
+}
+
+.btn-primary:hover {
+    background-color: #6658de;
+}
+
+.btn-default {
+    color: #4d4d4d;
+    background-color: #f4f4f4;
+}
+
+.btn-default:hover {
+    background-color: #e8e8e8;
+}
+
+.cards {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+
+.card {
+    width: 47%;
+    margin: 15px 1.5%;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 3px #7f8c8d;
+}
+
+.card:hover {
+    box-shadow: 0 0 10px #7f8c8d;
+}
+
+.tituloConteudo {
+    color: #414142;
+    font-weight: 400;
+    padding: 10px 0 0 20px;
+}
+
+.messageForm {
+    font-size: .8rem;
+    color: rgb(151, 1, 1);
+    padding: 10px;
+}
+
+.formGroup {
+    display: flex;
+    flex-direction: column;
+}
+
+.formGroup label {
+    margin-bottom: 5px;
+}
+
+.formGroup input {
+    width: 50%;
+    padding: 5px 7px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    background-color: #ecf0f5;
+}
+
+.formGroup label, .formGroup input {
+    font-size: .9rem;
+}
+
+i {
+    color: #fff;
+    font-size: 1.2rem;
+    margin: 0 5px;
+}
